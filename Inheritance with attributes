@@ -1,0 +1,16 @@
+hericlass student:
+    name = "lcprit"
+    age = 21
+
+class csestudent(student):
+    branch = "cse g&f"
+
+# First instance setup (Note: image spelling varies between 'csestudent' and 'cse student')
+fg = csestudent()
+print(fg.name)
+
+# Re-assigning fg
+fg = csestudent()
+print(fg.name)
+print(fg.age)
+print(fg.branch)
