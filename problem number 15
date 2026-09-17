@@ -1,0 +1,26 @@
+class Dog:
+    def sound(self):
+        return "Dog barks"
+
+class Cat:
+    def sound(self):
+        return "Cat meows"
+
+class Cow:
+    def sound(self):
+        return "Cow moows"
+
+# Polymorphic Function
+# This function accepts ANY object that has a 'sound' method
+def make_animal_speak(animal_object):
+    print(animal_object.sound())
+
+# Creating different class instances
+dog_instance = Dog()
+cat_instance = Cat()
+cow_instance = Cow()
+
+# Passing different objects into the exact same function
+make_animal_speak(dog_instance)
+make_animal_speak(cat_instance)
+make_animal_speak(cow_instance)
