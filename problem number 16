@@ -1,0 +1,10 @@
+class UnprotectedAccount:
+    def __init__(self, initial_balance):
+        self.balance = initial_balance  # Public variable (No protection)
+
+# Usage
+account = UnprotectedAccount(100)
+
+# Direct, unvalidated modifications are permitted
+account.balance = -5000 
+print(account.balance)  # Output: -5000 (Data corrupted easily)
